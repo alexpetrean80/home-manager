@@ -51,7 +51,7 @@
         linter = "markdownlint";
       };
       nix = {
-        formatter = "nixfmt";
+        formatter = "alejandra";
         # linter = "statix";
       };
       python = {

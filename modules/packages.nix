@@ -18,6 +18,7 @@
     fnm
     gnupg
     poetry
+    onlyoffice-bin
     # jetbrains-toolbox
     # valgrind
     # zig

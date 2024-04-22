@@ -4,25 +4,25 @@ in {
   programs.nixvim.keymaps = [
     # move around splits
     {
-      action = "<C-w>h";
+      action = "<cmd>TmuxNavigateLeft<CR>";
       key = "<C-h>";
       options = {silent = true;};
       mode = "n";
     }
     {
-      action = "<C-w>j";
+      action = "<cmd>TmuxNavigateDown<CR>";
       key = "<C-j>";
       options = {silent = true;};
       mode = "n";
     }
     {
-      action = "<C-w>k";
+      action = "<cmd>TmuxNavigateUp<CR>";
       key = "<C-k>";
       options = {silent = true;};
       mode = "n";
     }
     {
-      action = "<c-w>l";
+      action = "<cmd>TmuxNavigateRight<CR>";
       key = "<c-l>";
       options = {silent = true;};
       mode = "n";
@@ -82,6 +82,30 @@ in {
       action = "<cmd>lua vim.lsp.buf.code_action()<CR>";
       key = "<leader>a";
       options = getOpts "Code action";
+      mode = "n";
+    }
+    {
+      action = ":TestNearest<CR>";
+      key = "<leader>tn";
+      options = getOpts "Test nearest";
+      mode = "n";
+    }
+    {
+      action = ":TestFile<CR>";
+      key = "<leader>tf";
+      options = getOpts "Test file";
+      mode = "n";
+    }
+    {
+      action = ":TestSuite<CR>";
+      key = "<leader>ts";
+      options = getOpts "Test suite";
+      mode = "n";
+    }
+    {
+      action = ":VimuxOpenRunner<CR>:VimuxTogglePane<CR>";
+      key = "<leader>v";
+      options = getOpts "Vimux";
       mode = "n";
     }
   ];

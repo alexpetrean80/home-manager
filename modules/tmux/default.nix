@@ -9,6 +9,7 @@
     plugins = with pkgs.tmuxPlugins; [
       sensible
       yank
+      vim-tmux-navigator
       prefix-highlight
       {
         plugin = resurrect;

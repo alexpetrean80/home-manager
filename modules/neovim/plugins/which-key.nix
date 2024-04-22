@@ -7,6 +7,7 @@
       "<leader>lc" = "Calls";
       "<leader>ld" = "Diagnostics";
       "<leader>lf" = "Find";
+      "<leader>t" = "Test";
     };
     window = {
       margin = {

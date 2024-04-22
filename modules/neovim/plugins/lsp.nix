@@ -8,7 +8,6 @@
       bashls.enable = true;
       clangd.enable = true;
       dockerls.enable = true;
-      efm.enable =true;
       eslint.enable = true;
       gopls.enable = true;
       helm-ls.enable = true;
@@ -17,7 +16,7 @@
       lua-ls.enable = true;
       marksman.enable = true;
       nil_ls.enable = true;
-      pyright.enable = true;
+      # ruff.enable = true;
       rust-analyzer = {
         enable = true;
         installCargo = false;

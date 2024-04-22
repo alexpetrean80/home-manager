@@ -10,6 +10,11 @@
     #   key = "49FEB0D734CF380AC00F540DA5BA27BA985693DF";
     #   signByDefault = true;
     # };
+    aliases = {
+      up = "pull --rebase";
+      pfl = "push --force-with-lease";
+      ana = "commit --amend --no-edit --allow-empty";
+    };
     ignores = [
       "node_modules"
       ".DS_Store"

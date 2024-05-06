@@ -13,6 +13,7 @@
   programs.nixvim = {
     enable = true;
     enableMan = true;
+    withNodeJs = true;
     colorschemes.catppuccin = {
       enable = true;
     };

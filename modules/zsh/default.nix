@@ -8,6 +8,8 @@
     initExtra = ''
       export GOPATH="$HOME/go/"
       export PATH="$GOPATH:$HOME/.local/share/npm/bin:$HOME/.local/share/fnm:$HOME/.cargo/bin:$GOPATH/bin:$HOME/.local/bin:$PATH"
+      export EDITOR="nvim"
+      export VISUAL="nvim"
     '';
 
     shellAliases = {

@@ -23,7 +23,7 @@ in {
     }
     {
       action = "<cmd>TmuxNavigateRight<CR>";
-      key = "<c-l>";
+      key = "<C-l>";
       options = {silent = true;};
       mode = "n";
     }

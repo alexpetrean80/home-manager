@@ -3,7 +3,7 @@
     ../../modules
     ../../modules/cdp
     ../../modules/git
-    ../../modules/kitty
+    ../../modules/wezterm
     ../../modules/neovim
     ../../modules/starship
     ../../modules/tmux

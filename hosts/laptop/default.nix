@@ -4,7 +4,6 @@
     ../../modules/cdp
     ../../modules/git
     ../../modules/gnome
-    ../../modules/kitty
     ../../modules/neovim
     ../../modules/tmux
     ../../modules/wezterm

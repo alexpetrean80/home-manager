@@ -1,7 +1,7 @@
 {...}: {
   programs.nixvim.plugins.none-ls = {
-    enable = true;
-    enableLspFormat = true;
+    enable = false;
+    enableLspFormat = false;
     sources = {
       diagnostics = {
         commitlint.enable = true;

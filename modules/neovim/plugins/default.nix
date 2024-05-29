@@ -1,7 +1,6 @@
 {...}: {
   imports = [
     ./copilot.nix
-    # ./efm.nix
     ./harpoon.nix
     ./indent_blankline.nix
     ./lsp.nix

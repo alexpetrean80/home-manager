@@ -15,8 +15,8 @@
       jsonls.enable = true;
       lua-ls.enable = true;
       marksman.enable = true;
-      nil_ls.enable = true;
-      # ruff.enable = true;
+      nixd.enable = true;
+      pyright.enable = true;
       rust-analyzer = {
         enable = true;
         installCargo = false;

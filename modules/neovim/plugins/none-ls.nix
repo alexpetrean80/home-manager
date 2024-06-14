@@ -5,7 +5,6 @@
     sources = {
       diagnostics = {
         commitlint.enable = true;
-        golangci_lint.enable = true;
         markdownlint.enable = true;
         pylint.enable = true;
         selene.enable = true;

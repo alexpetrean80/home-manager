@@ -52,6 +52,12 @@
         extraSpecialArgs = {inherit inputs outputs;};
         modules = [./hosts/mac];
       };
-    };
+
+      "alexp@wsl" = home-manager.lib.homeManagerConfiguration {
+        pkgs = nixpkgs.legacyPackages.x86_64-linux;
+        extraSpecialArgs = {inherit inputs outputs;};
+        modules = [./hosts/wsl];
+      };
+      };
   };
 }

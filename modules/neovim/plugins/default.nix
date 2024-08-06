@@ -1,6 +1,5 @@
 {...}: {
   imports = [
-    ./copilot.nix
     ./harpoon.nix
     ./indent_blankline.nix
     ./lsp.nix
@@ -26,5 +25,6 @@
     sandwich.enable = true;
     rainbow-delimiters.enable = true;
     lsp-format.enable = true;
+    typescript-tools.enable = true;
   };
 }

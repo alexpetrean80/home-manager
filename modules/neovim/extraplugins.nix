@@ -13,10 +13,5 @@
         ${lib.readFile ./config/lualine.lua}
 
         vim.cmd("let test#strategy = 'vimux'")
-
-    --   vim.keymap.set('n', 'C-h', ':TmuxNavigateLeft<CR>')
-    --   vim.keymap.set('n', 'C-j', ':TmuxNavigateDown<CR>')
-    --   vim.keymap.set('n', 'C-k', ':TmuxNavigateUp<CR>')
-    --   vim.keymap.set('n', 'C-l', ':TmuxNavigateRight<CR>')
   '';
 }

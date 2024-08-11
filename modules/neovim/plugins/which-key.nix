@@ -4,9 +4,9 @@
     registrations = {
       "<leader>b" = "Buffers";
       "<leader>l" = "LSP";
-      "<leader>lc" = "Calls";
-      "<leader>ld" = "Diagnostics";
-      "<leader>lf" = "Find";
+      "<leader>c" = "Calls";
+      "<leader>d" = "Diagnostics";
+      "<leader>p" = "Peek";
       "<leader>t" = "Test";
     };
     window = {

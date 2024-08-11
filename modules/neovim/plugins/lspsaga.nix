@@ -14,19 +14,19 @@ in {
   programs.nixvim.keymaps = [
     {
       action = "<cmd>Lspsaga diagnostic_jump_next<CR>";
-      key = "<leader>ldn";
+      key = "<leader>dn";
       options = getOpts "Next diagnostic";
       mode = "n";
     }
     {
       action = "<cmd>Lspsaga diagnostic_jump_prev<CR>";
-      key = "<leader>ldp";
+      key = "<leader>dp";
       options = getOpts "Previous diagnostic";
       mode = "n";
     }
     {
       action = "<cmd>Lspsaga show_workspace_diagnostics<CR>";
-      key = "<leader>ldd";
+      key = "<leader>dd";
       options = getOpts "Show workspace diagnostics";
       mode = "n";
     }
@@ -50,50 +50,50 @@ in {
     }
     {
       action = "<cmd>Lspsaga incoming_calls<CR>";
-      key = "<leader>lci";
+      key = "<leader>ci";
       options = getOpts "Show incoming calls";
       mode = "n";
     }
     {
       action = "<cmd>Lspsaga outgoing_calls<CR>";
-      key = "<leader>lco";
+      key = "<leader>co";
       options = getOpts "Show outgoing calls";
       mode = "n";
     }
     {
       action = "<cmd>Lspsaga code_action<CR>";
-      key = "<leader>c";
+      key = "<leader>a";
       options = getOpts "Code action";
       mode = "n";
     }
 
     {
       action = "<cmd>Lspsaga peek_definition<CR>";
-      key = "<leader>lpd";
+      key = "<leader>pd";
       options = getOpts "Peek definition";
       mode = "n";
     }
     {
       action = "<cmd>Lspsaga peek_type_definition<CR>";
-      key = "<leader>lpt";
+      key = "<leader>pt";
       options = getOpts "Peek type definition";
       mode = "n";
     }
     {
       action = "<cmd>Lspsaga finder def<CR>";
-      key = "<leader>lfd";
+      key = "gd";
       options = getOpts "Find definitions";
       mode = "n";
     }
     {
       action = "<cmd>Lspsaga finder ref<CR>";
-      key = "<leader>lfr";
+      key = "gr";
       options = getOpts "Find references";
       mode = "n";
     }
     {
       action = "<cmd>Lspsaga finder imp<CR>";
-      key = "<leader>lfi";
+      key = "gi";
       options = getOpts "Find implementations";
       mode = "n";
     }

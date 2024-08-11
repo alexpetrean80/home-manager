@@ -79,12 +79,6 @@ in {
       mode = "n";
     }
     {
-      action = "<cmd>lua vim.lsp.buf.code_action()<CR>";
-      key = "<leader>a";
-      options = getOpts "Code action";
-      mode = "n";
-    }
-    {
       action = ":TestNearest<CR>";
       key = "<leader>tn";
       options = getOpts "Test nearest";

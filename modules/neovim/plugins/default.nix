@@ -1,6 +1,5 @@
 {...}: {
   imports = [
-    ./harpoon.nix
     ./indent_blankline.nix
     ./lsp.nix
     ./lspsaga.nix

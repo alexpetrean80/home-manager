@@ -17,6 +17,7 @@
     nodejs_20
     python3
     go
+    delve
     fnm
     gnupg
     poetry

@@ -3,7 +3,6 @@
     inputs.nixvim.homeManagerModules.nixvim
 
     ./options.nix
-    ./config.nix
     ./extraplugins.nix
     ./keymaps.nix
 

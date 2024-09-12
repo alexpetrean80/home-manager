@@ -1,5 +1,6 @@
 {...}: {
   imports = [
+    ./dap.nix
     ./indent_blankline.nix
     ./lsp.nix
     ./lspsaga.nix

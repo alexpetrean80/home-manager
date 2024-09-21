@@ -8,7 +8,6 @@
     ../../modules/starship
     ../../modules/tmux
     ../../modules/zsh
-    ../../modules/vscode
     ../../modules/packages.nix
   ];
 

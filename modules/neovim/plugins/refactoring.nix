@@ -3,7 +3,7 @@
 in {
   programs.nixvim.plugins.refactoring = {
     enable = true;
-    promptFuncParamType = {
+    prompt_func_param_type = {
       go = true;
       java = true;
       cpp = true;
@@ -12,7 +12,7 @@ in {
       hpp = true;
       cxx = true;
     };
-    promptFuncReturnType = {
+    prompt_func_return_type = {
       go = true;
       java = true;
       cpp = true;

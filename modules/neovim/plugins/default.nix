@@ -25,6 +25,47 @@
     sandwich.enable = true;
     rainbow-delimiters.enable = true;
     lsp-format.enable = true;
+    transparent = {
+      enable = true;
+      settings = {
+        groups = [
+          "Normal"
+          "NormalNC"
+          "Comment"
+          "Constant"
+          "Special"
+          "Identifier"
+          "Statement"
+          "PreProc"
+          "Type"
+          "Underlined"
+          "Todo"
+          "String"
+          "Function"
+          "Conditional"
+          "Repeat"
+          "Operator"
+          "Structure"
+          "LineNr"
+          "NonText"
+          "SignColumn"
+          "CursorLine"
+          "CursorLineNr"
+          "StatusLine"
+          "StatusLineNC"
+          "EndOfBuffer"
+        ];
+        exclude_groups = [];
+        extra_groups = [
+          "BufferLineTabClose"
+          "BufferLineBufferSelected"
+          "BufferLineFill"
+          "BufferLineBackground"
+          "BufferLineSeparator"
+          "BufferLineIndicatorSelected"
+        ];
+      };
+    };
     typescript-tools.enable = true;
   };
 }

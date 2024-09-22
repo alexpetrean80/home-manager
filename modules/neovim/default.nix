@@ -13,6 +13,9 @@
     enable = true;
     enableMan = true;
     withNodeJs = true;
+    performance = {
+      byteCompileLua.enable = true;
+    };
     colorschemes.catppuccin = {
       enable = true;
     };

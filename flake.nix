@@ -4,11 +4,6 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
-    nix-darwin = {
-      url = "github:LnL7/nix-darwin/master";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     nixvim = {
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -18,33 +13,26 @@
   outputs = {
     self,
     nixpkgs,
-    nix-darwin,
     home-manager,
     ...
   } @ inputs: let
     inherit (self) outputs;
   in {
     homeConfigurations = {
-      "alexp@workstation" = home-manager.lib.homeManagerConfiguration {
+      "alexp@dasserver" = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
         extraSpecialArgs = {inherit inputs outputs;};
-        modules = [./hosts/workstation];
+        modules = [./hosts/dasserver];
       };
-      "iul@workstation" = home-manager.lib.homeManagerConfiguration {
+      "alexp@daslaptop" = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
         extraSpecialArgs = {inherit inputs outputs;};
-        modules = [./hosts/workstation];
+        modules = [./hosts/daslaptop];
       };
-
-      "alexp@laptop" = home-manager.lib.homeManagerConfiguration {
+      "iul@daslaptop" = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.x86_64-linux;
         extraSpecialArgs = {inherit inputs outputs;};
-        modules = [./hosts/laptop];
-      };
-      "iul@laptop" = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.x86_64-linux;
-        extraSpecialArgs = {inherit inputs outputs;};
-        modules = [./hosts/laptop];
+        modules = [./hosts/daslaptop];
       };
 
       "alexp@workMac" = home-manager.lib.homeManagerConfiguration {
@@ -52,12 +40,6 @@
         extraSpecialArgs = {inherit inputs outputs;};
         modules = [./hosts/mac];
       };
-
-      "alexp@wsl" = home-manager.lib.homeManagerConfiguration {
-        pkgs = nixpkgs.legacyPackages.x86_64-linux;
-        extraSpecialArgs = {inherit inputs outputs;};
-        modules = [./hosts/wsl];
-      };
-      };
+    };
   };
 }

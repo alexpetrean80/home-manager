@@ -1,7 +1,7 @@
 local wezterm = require("wezterm")
 
 return {
-  font = wezterm.font("Cascadia Code NF"),
+  font = wezterm.font("Caskaydia Cove NF"),
   font_size = 17,
   color_scheme = "Catppuccin Mocha",
   enable_tab_bar = false,

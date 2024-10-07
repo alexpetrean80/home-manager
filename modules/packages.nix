@@ -21,10 +21,6 @@
     fnm
     gnupg
     poetry
-    todoist
-    # onlyoffice-bin
-    # jetbrains-toolbox
-    # valgrind
-    # zig
+    tmux-sessionizer
   ];
 }

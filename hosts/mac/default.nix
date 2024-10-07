@@ -1,7 +1,10 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  lib,
+  ...
+}: {
   imports = [
     ../../modules
-    ../../modules/cdp
     ../../modules/git
     ../../modules/wezterm
     ../../modules/neovim
@@ -27,10 +30,7 @@
     ];
 
     nixvim.extraConfigLua = ''
-      ${lib.readFile ../../modules/neovim/config/lualine.lua}
-      ${lib.readFile ../../modules/neovim/config/dap.lua}
       ${lib.readFile ../../modules/neovim/config/snyk-ls.lua}
-      vim.cmd("let test#strategy = 'vimux'")
     '';
 
     kitty.extraConfig = ''

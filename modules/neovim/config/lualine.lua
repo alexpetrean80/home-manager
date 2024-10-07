@@ -1,4 +1,5 @@
 local lualine = require("lualine")
+
 local get_lsp = function()
   local msg = "No Active Lsp"
   local buf_ft = vim.api.nvim_buf_get_option(0, "filetype")
@@ -93,6 +94,7 @@ ins_left({
   function()
     return ""
   end,
+
   color = function()
     -- auto change color according to neovims mode
     local mode_color = {
@@ -217,7 +219,7 @@ ins_right({
 
 -- Add components to right sections
 ins_right({
-  "o:encoding",      -- option component same as &encoding in viml
+  "o:encoding",       -- option component same as &encoding in viml
   fmt = string.upper, -- I'm not sure why it's upper case either ;)
   cond = conditions.hide_in_width,
   color = {

@@ -1,7 +1,6 @@
 {...}: {
   imports = [
     ../../modules
-    ../../modules/cdp
     ../../modules/git
     ../../modules/neovim
     ../../modules/tmux

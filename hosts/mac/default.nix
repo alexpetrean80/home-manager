@@ -11,19 +11,32 @@
     ../../modules/packages.nix
   ];
 
-  programs.git.includes = [
-    {
-      contents = {
-        user = {
-          email = "alex-tudor.petrean@snyk.io";
-          signingkey = "E51D11C1C401B8F1FA26DA7301D2E393ABC8B299";
-        };
-        commit = {
+  programs = {
+    git.includes = [
+      {
+        contents = {
+          user = {
+            email = "alex-tudor.petrean@snyk.io";
+            signingkey = "E51D11C1C401B8F1FA26DA7301D2E393ABC8B299";
+          };
+          commit = {
             gpgSign = true;
+          };
         };
-      };
-    }
-  ];
+      }
+    ];
+
+    nixvim.extraConfigLua = ''
+      ${lib.readFile ../../modules/neovim/config/lualine.lua}
+      ${lib.readFile ../../modules/neovim/config/dap.lua}
+      ${lib.readFile ../../modules/neovim/config/snyk-ls.lua}
+      vim.cmd("let test#strategy = 'vimux'")
+    '';
+
+    kitty.extraConfig = ''
+      font_size 16.0
+    '';
+  };
 
   home.packages = with pkgs; [
     aws-vault

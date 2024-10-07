@@ -7,6 +7,7 @@
     ../../modules
     ../../modules/git
     ../../modules/wezterm
+    ../../modules/kitty
     ../../modules/neovim
     ../../modules/starship
     ../../modules/tmux
@@ -32,9 +33,8 @@
     nixvim.extraConfigLua = ''
       ${lib.readFile ../../modules/neovim/config/snyk-ls.lua}
     '';
-
     kitty.extraConfig = ''
-      font_size 16.0
+      font_size 18.0
     '';
   };
 

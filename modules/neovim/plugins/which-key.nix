@@ -1,6 +1,7 @@
 {...}: {
   programs.nixvim.plugins.which-key = {
     enable = true;
+
     settings.spec = [
       {
         __unkeyed-1 = "<leader>b";
@@ -29,6 +30,10 @@
       {
         __unkeyed-1 = "<leader>t";
         group = "Test";
+      }
+      {
+        __unkeyed-1 = "<leader>D";
+        group = "Debug";
       }
     ];
   };

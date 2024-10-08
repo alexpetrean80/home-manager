@@ -1,4 +1,4 @@
-{...}: {
+{pkgs, ...}: {
   imports = [
     ../../modules
     ../../modules/git
@@ -17,9 +17,13 @@
     background_opacity 0.9
   '';
 
+
   home = {
     username = "alexp";
     homeDirectory = "/home/alexp";
+    packages = with pkgs; [
+zig
+    ];
     stateVersion = "24.05";
   };
 }

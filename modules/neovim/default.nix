@@ -10,7 +10,7 @@
   ];
 
   programs.nixvim = {
-    enable = true;
+    enable = false;
     enableMan = true;
     withNodeJs = true;
     performance = {

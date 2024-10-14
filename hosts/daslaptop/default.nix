@@ -3,7 +3,7 @@
     ../../modules
     ../../modules/git
     ../../modules/kitty
-    ../../modules/neovim
+    # ../../modules/neovim
     ../../modules/tmux
     ../../modules/wezterm
     ../../modules/starship

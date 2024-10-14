@@ -10,6 +10,7 @@
     cmake
     gnumake
     neofetch
+    neovim
     gcc
     rustup
     nodejs_20

@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{ pkgs, ... }: {
   home.packages = with pkgs; [
     fzf
     ripgrep
@@ -15,7 +15,6 @@
     rustup
     nodejs_20
     go
-    delve
     fnm
     gnupg
     poetry

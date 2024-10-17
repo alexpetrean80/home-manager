@@ -1,14 +1,12 @@
-{
-  pkgs,
-  lib,
-  ...
+{ pkgs
+, lib
+, ...
 }: {
   imports = [
     ../../modules
     ../../modules/git
     ../../modules/wezterm
     ../../modules/kitty
-    ../../modules/neovim
     ../../modules/starship
     ../../modules/tmux
     ../../modules/zsh
@@ -29,13 +27,6 @@
         };
       }
     ];
-
-    nixvim.extraConfigLua = ''
-      ${lib.readFile ../../modules/neovim/config/snyk-ls.lua}
-    '';
-    kitty.extraConfig = ''
-      font_size 18.0
-    '';
   };
 
   home.packages = with pkgs; [

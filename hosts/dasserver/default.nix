@@ -1,8 +1,7 @@
-{...}: {
+{ ... }: {
   imports = [
     ../../modules
     ../../modules/git
-    ../../modules/neovim
     ../../modules/tmux
     ../../modules/wezterm
     ../../modules/starship

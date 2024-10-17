@@ -1,9 +1,8 @@
-{pkgs, ...}: {
+{ pkgs, ... }: {
   imports = [
     ../../modules
     ../../modules/git
     ../../modules/kitty
-    # ../../modules/neovim
     ../../modules/tmux
     ../../modules/wezterm
     ../../modules/starship
@@ -22,7 +21,7 @@
     username = "alexp";
     homeDirectory = "/home/alexp";
     packages = with pkgs; [
-zig
+      zig
     ];
     stateVersion = "24.05";
   };

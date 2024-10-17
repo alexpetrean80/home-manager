@@ -17,6 +17,7 @@
     go
     fnm
     gnupg
+    postgresql
     poetry
     tmux-sessionizer
   ];

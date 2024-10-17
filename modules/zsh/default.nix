@@ -1,4 +1,4 @@
-{...}: {
+{ ... }: {
   programs.zsh = {
     enable = true;
     autosuggestion.enable = true;
@@ -21,6 +21,7 @@
       dcb = "docker compose build";
       dcd = "docker compose down";
       dcr = "docker compose run";
+      rm = "/bin/rm";
     };
 
     antidote = {

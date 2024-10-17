@@ -9,7 +9,8 @@
     ../../modules/kitty
     ../../modules/starship
     ../../modules/tmux
-    ../../modules/zsh
+    # ../../modules/zsh
+    ../../modules/fish
     ../../modules/packages.nix
   ];
 

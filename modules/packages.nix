@@ -18,6 +18,7 @@
     fnm
     gnupg
     postgresql
+    deno
     poetry
     tmux-sessionizer
   ];

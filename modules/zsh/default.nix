@@ -1,6 +1,7 @@
 { ... }: {
   programs.zsh = {
     enable = true;
+
     autosuggestion.enable = true;
     enableCompletion = true;
     enableVteIntegration = true;
@@ -26,10 +27,12 @@
     antidote = {
       enable = true;
       plugins = [
-        "ohmyzsh/ohmyzsh path:plugins/brew"
         "ohmyzsh/ohmyzsh path:plugins/fzf"
         "ohmyzsh/ohmyzsh path:plugins/zsh-interactive-cd"
         "ohmyzsh/ohmyzsh path:plugins/command-not-found"
+        "zsh-users/zsh-autosuggestions"
+        "zsh-users/zsh-syntax-highlighting"
+        "zsh-users/zsh-completions"
       ];
     };
   };

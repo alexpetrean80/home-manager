@@ -21,7 +21,6 @@
       dcb = "docker compose build";
       dcd = "docker compose down";
       dcr = "docker compose run";
-      rm = "/bin/rm";
     };
 
     antidote = {

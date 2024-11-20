@@ -15,13 +15,11 @@
     rustup
     nodejs_20
     python3
-    python312Packages.pre-commit-hooks
     python312Packages.pip
     go
     fnm
     gnupg
     postgresql
-    deno
     tmux-sessionizer
   ];
 }

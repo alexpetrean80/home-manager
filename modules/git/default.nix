@@ -1,5 +1,12 @@
-{...}: {
-  imports = [./lazygit.nix ./github-cli.nix];
+{ config, pkgs, ... }: {
+  imports = [ ./lazygit.nix ./github-cli.nix ];
+
+  home.packages = [
+    (pkgs.writeShellScriptBin "fzb" ''
+      b=$(git branch | fzf | tr -d '* ')
+      git checkout "$b"
+    '')
+  ];
 
   programs.git = {
     enable = true;
@@ -14,6 +21,7 @@
       up = "pull --rebase";
       pfl = "push --force-with-lease";
       ana = "commit --amend --no-edit --allow-empty";
+      cb = "checkout -b";
     };
     ignores = [
       "node_modules"
@@ -39,4 +47,7 @@
       };
     };
   };
+
 }
+
+

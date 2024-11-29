@@ -1,13 +1,12 @@
 { pkgs, ... }: {
   imports = [
     ../../modules
-    ../../modules/git
-    ../../modules/kitty
-    ../../modules/tmux
-    ../../modules/wezterm
-    ../../modules/starship
-    ../../modules/zsh
-    ../../modules/packages.nix
+    ../../modules/cli
+    ../../modules/gui
+    ../../modules/gui/terminals/kitty
+    ../../modules/gui/hypr
+    ../../modules/gui/waybar
+    ../../modules/gui/zed
   ];
 
   programs.kitty.extraConfig = ''
@@ -16,13 +15,9 @@
     background_opacity 0.9
   '';
 
-
   home = {
     username = "alexp";
     homeDirectory = "/home/alexp";
-    packages = with pkgs; [
-      zig
-    ];
     stateVersion = "24.05";
   };
 }

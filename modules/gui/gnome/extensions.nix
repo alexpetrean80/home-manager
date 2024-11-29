@@ -4,6 +4,6 @@
     blur-my-shell
     caffeine
     gsconnect
-    # user-themes
+    user-themes
   ];
 }

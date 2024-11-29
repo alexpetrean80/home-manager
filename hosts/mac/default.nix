@@ -4,14 +4,8 @@
 }: {
   imports = [
     ../../modules
-    ../../modules/git
-    ../../modules/wezterm
-    ../../modules/kitty
-    ../../modules/starship
-    ../../modules/tmux
-    ../../modules/zsh
-    # ../../modules/fish
-    ../../modules/packages.nix
+    ../../modules/cli
+    ../../modules/gui/zed
   ];
 
   programs = {

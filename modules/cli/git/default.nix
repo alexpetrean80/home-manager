@@ -1,5 +1,9 @@
-{ config, pkgs, ... }: {
-  imports = [ ./lazygit.nix ./github-cli.nix ];
+{
+  config,
+  pkgs,
+  ...
+}: {
+  imports = [./lazygit.nix ./github-cli.nix];
 
   home.packages = [
     (pkgs.writeShellScriptBin "fzb" ''
@@ -47,7 +51,4 @@
       };
     };
   };
-
 }
-
-

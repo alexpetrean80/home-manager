@@ -1,12 +1,7 @@
-{ ... }: {
+{...}: {
   imports = [
     ../../modules
-    ../../modules/git
-    ../../modules/tmux
-    ../../modules/wezterm
-    ../../modules/starship
-    ../../modules/zsh
-    ../../modules/packages.nix
+    ../../modules/cli
   ];
 
   home = {

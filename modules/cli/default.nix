@@ -1,16 +1,25 @@
-{ pkgs, ... }: {
+{pkgs, ...}: {
+  imports = [
+    ./git
+    ./starship
+    ./tmux
+    ./zsh
+  ];
+
   home.packages = with pkgs; [
     fzf
+    gnupg
     ripgrep
     fd
     eza
-    httpie
     glow
     bat
+    neovim
+    neofetch
+    nixd
+    httpie
     cmake
     gnumake
-    neofetch
-    neovim
     gcc
     rustup
     nodejs_20
@@ -18,8 +27,9 @@
     python312Packages.pip
     go
     fnm
-    gnupg
+    nil
     postgresql
     tmux-sessionizer
+    elixir
   ];
 }

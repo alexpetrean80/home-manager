@@ -6,6 +6,9 @@
     ../../modules
     ../../modules/cli
     ../../modules/gui/zed
+    ../../modules/gui/terminals/kitty
+    ../../modules/gui/terminals/wezterm
+    ../../modules/cli/cdp
   ];
 
   programs = {

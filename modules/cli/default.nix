@@ -31,5 +31,6 @@
     postgresql
     tmux-sessionizer
     elixir
+    zellij
   ];
 }

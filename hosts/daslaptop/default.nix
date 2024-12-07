@@ -3,9 +3,9 @@
     ../../modules
     ../../modules/cli
     ../../modules/gui
+    ../../modules/gui/theming/qt
+    ../../modules/gui/theming/gtk
     ../../modules/gui/terminals/kitty
-    ../../modules/gui/hypr
-    ../../modules/gui/waybar
     ../../modules/gui/zed
   ];
 

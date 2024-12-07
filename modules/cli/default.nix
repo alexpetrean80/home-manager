@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{ pkgs, ... }: {
   imports = [
     ./git
     ./starship
@@ -27,10 +27,9 @@
     python312Packages.pip
     go
     fnm
-    nil
     postgresql
     tmux-sessionizer
     elixir
-    zellij
+    htop
   ];
 }
